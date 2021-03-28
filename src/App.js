@@ -26,13 +26,13 @@ function App() {
           <Switch>
             {/* <Route path="/bridal-party" component={BridalParty} />
             <Route path="/guests" component={GuestList} /> */}
-            <Route path="/info" component={Info} key={window.location.pathname} />
-            <Route path="/rsvp" component={RSVP} />
-            <Route path="/photos" component={Photos} />
-            <Route path="/invite-not-found" component={Sorry} />
-            <Route path="/thank-you" component={ThankYou} />
-            <Route path="/error" component={Error} />
-            <Route path="/" exact component={Home} key={window.location.pathname} />
+            <Route path="/my-app/info" component={Info} key={window.location.pathname} />
+            <Route path="/my-app/rsvp" component={RSVP} />
+            <Route path="/my-app/photos" component={Photos} />
+            <Route path="/my-app/invite-not-found" component={Sorry} />
+            <Route path="/my-app/thank-you" component={ThankYou} />
+            <Route path="/my-app/error" component={Error} />
+            <Route path="/my-app" exact component={Home} key={window.location.pathname} />
           </Switch>
         </MainContainer>
       </BodyContainer>
