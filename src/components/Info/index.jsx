@@ -49,7 +49,7 @@ const Info = () => {
         </TextContainer>
       </InfoBlockContainer>
      
-      <InfoBlockContainer textAlign="left">
+      <InfoBlockContainer textAlign="left" id="last-block">
         <TextContainer>
           <h2>what to eat</h2>
           <p><span>ramen</span></p>

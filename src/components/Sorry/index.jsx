@@ -12,7 +12,7 @@ const Sorry = () => {
       <GreyBlock>
         <h2>Sorry!</h2>
         <p>We couldn't find your invite</p>
-        <Link to="/rsvp"><button>Back to RSVP</button></Link>
+        <Link to="/my-app/rsvp"><button>Back to RSVP</button></Link>
       </GreyBlock>
     </MessageContainer>
   </>
