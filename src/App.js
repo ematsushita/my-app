@@ -14,7 +14,7 @@ import { BodyContainer, MainContainer } from './styles';
 function App() {
   // const homePage = window.location.pathname === '/';
   const [currentPage, setcurrentPage] = useState(window.location.pathname);
-  const isHomePage = currentPage === '/';
+  const isHomePage = currentPage === '/my-app';
   useEffect(() => {
     setcurrentPage(window.location.pathname)
   }, [currentPage]);
