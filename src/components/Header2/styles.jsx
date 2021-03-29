@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   background-color: transparent;
-  height: 60px;
+  height: 120px;
   width: 100%;
   position: relative;
   text-align: center;
