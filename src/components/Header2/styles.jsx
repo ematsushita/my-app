@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
   background-color: transparent;
-  height: ${props => (props.isHomePage ? '60px' : '120px')};
+  height: 60px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -61,7 +61,7 @@ export const Menu = styled.div`
   flex-direction: column;
   width: 250px;
   height: ${props => props.height}px;
-  background: ${props => (props.isHomePage ? 'white' : '#FFDAB9')};
+  background: white;
   padding: 20px;
   justify-content: center;
 `;

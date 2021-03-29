@@ -14,14 +14,13 @@ import {
 
 const Header2 = ({ height }) => {
   const [open, setOpen] = useState(false);
-  const isHomePage = (window.location.hash === '/#') || (window.location.hash === '#');
 
   const onClick = () => {
     setOpen(!open);
   };
 
   return ( 
-    <HeaderContainer id="header-2-container" isHomePage={isHomePage}>
+    <HeaderContainer id="header-2-container">
       <CSSTransition
         in={open}
         timeout={400}
@@ -31,7 +30,7 @@ const Header2 = ({ height }) => {
         onEnter={() => setOpen(true)}
         onExited={() => setOpen(false)}
       >
-        <Menu id="menu" open={open} height={height} isHomePage={isHomePage}>
+        <Menu id="menu" open={open} height={height}>
           <Link to="/rsvp" onClick={() => onClick()}><MenuItem>rsvp</MenuItem></Link>
           <Link to="/info" onClick={() => onClick()}><MenuItem>info</MenuItem></Link>
           <Link to="/photos" onClick={() => onClick()}><MenuItem>photos</MenuItem></Link>
