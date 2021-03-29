@@ -14,19 +14,14 @@ import {
 
 const Header2 = ({ height }) => {
   const [open, setOpen] = useState(false);
-  const isHomePage = (window.location.pathname === '/#') || (window.location.pathname === '#');
+  const isHomePage = (window.location.hash === '/#') || (window.location.hash === '#');
 
   const onClick = () => {
     setOpen(!open);
   };
 
   return ( 
-    <HeaderContainer id="header-container" isHomePage={isHomePage}>
-      { !isHomePage && (
-        <InitialContainer>
-          m + e
-        </InitialContainer>
-      )}
+    <HeaderContainer id="header-2-container" isHomePage={isHomePage}>
       <CSSTransition
         in={open}
         timeout={400}

@@ -6,7 +6,7 @@ export const HeaderContainer = styled.header`
   width: 100%;
   position: relative;
   text-align: center;
-  border-bottom: ${props => (props.isHomePage ? 'none' : '1px solid #FFDAB9')};
+  border-bottom: 'none';
   .menu-transition-enter {
     opacity: 0;
   }
