@@ -30,8 +30,8 @@ const Info = () => {
           <p><span>start time: </span>4pm</p>
           <p><span>directions: </span></p>
           <List>
-            <ListItem>From Georgia Street, enter Stanley Park and continue straight through the round-about. Take your first right after the Stanley Park Pavilion sign with the large red rose, which will swing left and bring you to the Pavilion.</ListItem>
-            <ListItem>From English Bay, enter Stanley Park via Beach Avenue. Turn right onto North Lagoon Drive (at Second Beach). Once past the lagoon, take a left at the stop sign and continue left through the round-about and take your first right after the “Stanley Park Pavilion” sign with the large red rose, which will swing left and bring you to the Pavilion.</ListItem>
+            <ListItem><span>From Georgia Street...</span> enter Stanley Park and continue straight through the round-about. Take your first right after the Stanley Park Pavilion sign with the large red rose, which will swing left and bring you to the Pavilion.</ListItem>
+            <ListItem><span>From English Bay...</span> enter Stanley Park via Beach Avenue. Turn right onto North Lagoon Drive (at Second Beach). Once past the lagoon, take a left at the stop sign and continue left through the round-about and take your first right after the “Stanley Park Pavilion” sign with the large red rose, which will swing left and bring you to the Pavilion.</ListItem>
           </List>
         </TextContainer>
         <ImageContainer id="image-1">
@@ -55,17 +55,18 @@ const Info = () => {
           <p><span>ramen</span></p>
           <List>
             <ListItem><a href="https://marutama.ca/" rel="noopener noreferrer" target="_blank">Marutama</a> - Matthew's #1 choice.</ListItem>
-            <ListItem><a href="https://ramendanbo.com/" rel="noopener noreferrer" target="_blank">Danbo</a> - super popular ramen joint. Expect to wait in line!</ListItem>
+            <ListItem><a href="https://ramendanbo.com/" rel="noopener noreferrer" target="_blank">Danbo</a> - super popular ramen joint. expect to wait in line!</ListItem>
           </List>
-          <p><span>sushi</span></p>
+          <p><span>sushi/seafood</span></p>
           <List>
-            <ListItem><a href="https://www.kishimotorestaurant.com/" rel="noopener noreferrer" target="_blank">Kishimoto</a> - pro tip: make a reservation well in advance or prepare to wait in line!</ListItem>
-            <ListItem><a href="https://minamirestaurant.com/" rel="noopener noreferrer" target="_blank">Minami</a> - Miku's sister restaurant with a more relaxed vibe. If you can, grab a table on their beautiful outdoor patio.</ListItem>
+            <ListItem><a href="https://www.kishimotorestaurant.com/" rel="noopener noreferrer" target="_blank">Kishimoto</a> - pro tip: make a reservation well in advance if you choose to go.</ListItem>
+            <ListItem><a href="https://www.bluewatercafe.net/" rel="noopener noreferrer" target="_blank">Blue Water Cafe</a> - upscale restaurant in the heart of Yaletown. their seafood tower is a must!</ListItem>
+            <ListItem><a href="https://www.octopusgarden-canada.com/" rel="noopener noreferrer" target="_blank">Octopus's Garden</a> - whimsical Japanese fare using choice fish, with premium wine & sake options.</ListItem>
           </List>
-          <p><span>fushion</span></p>
+          <p><span>fusion/misc.</span></p>
           <List>
             <ListItem><a href="http://www.kissatanto.com/" rel="noopener noreferrer" target="_blank">Kissa Tanto</a> - one of Elissa's favourite spots serving Japanese/Italian fusion</ListItem>
-            <ListItem><a href="https://www.ancoradining.com/" rel="noopener noreferrer" target="_blank">Ancora</a> - one of our go-to fine dining spots serving Japanese/Peruvian cuisine.</ListItem>
+            <ListItem><a href="http://www.phnompenhrestaurant.ca/" rel="noopener noreferrer" target="_blank">Phnom Penh</a> - vietnamese/cambodian restaurant serving up chicken wings and butter beef to die for.</ListItem>
           </List>
         </TextContainer>
         <ImageContainer id="image-3">

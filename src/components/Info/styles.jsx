@@ -48,8 +48,12 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  list-style: none;
   font-size: 0.9rem;
   font-weight: 200;
+  >span {
+    font-weight: 300;
+  }
   >a{
     text-decoration: none;
     font-weight: 400;
