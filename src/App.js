@@ -12,8 +12,8 @@ import Error from './components/AlreadySubmitted';
 import { BodyContainer, MainContainer } from './styles';
 
 function App() {
-  const [currentPage, setcurrentPage] = useState(window.location.pathname);
-  const isHomePage = (currentPage === '/') || (currentPage === '');;
+  const [currentPage, setcurrentPage] = useState(window.location.hash);
+  const isHomePage = (currentPage === '/') || (currentPage === '/#');;
   useEffect(() => {
     setcurrentPage(window.location.pathname)
   }, [currentPage]);

@@ -14,8 +14,8 @@ import {
 
 const Header = ({ height, viewerIsOpen }) => {
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState(window.location.pathname);
-  const isHomePage = window.location.pathname === '#/';
+  const [active, setActive] = useState(window.location.hash);
+  const isHomePage = window.location.hash === '#/';
 
   const onClick = () => {
     setOpen(!open);
