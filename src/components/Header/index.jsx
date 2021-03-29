@@ -39,22 +39,22 @@ const Header = ({ height, viewerIsOpen }) => {
       >
         <Menu id="menu" open={open} height={height} isHomePage={isHomePage}>
           <Link
-            to="/my-app/rsvp"
+            to="/rsvp"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/my-app/rsvp"}>rsvp</MenuItem>
+            <MenuItem active={active === "/rsvp"}>rsvp</MenuItem>
           </Link>
           <Link
-            to="/my-app/info"
+            to="/info"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/my-app/info"}>info</MenuItem>
+            <MenuItem active={active === "/info"}>info</MenuItem>
           </Link>
           <Link
-            to="/my-app/photos"
+            to="/photos"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/my-app/photos"}>photos</MenuItem>
+            <MenuItem active={active === "/photos"}>photos</MenuItem>
           </Link>
         </Menu>
       </CSSTransition>

@@ -27,7 +27,7 @@ const Form1 = ({ formOneDisplay, name}) => {
   function onSubmit(e) {
     e.preventDefault();
     if (guestNames.includes(name)) {
-      history.push('/my-app/error')
+      history.push('/error')
     } else {
       firebase
       .firestore()
@@ -38,7 +38,7 @@ const Form1 = ({ formOneDisplay, name}) => {
         plusOne
       })
       .then(() => {
-        history.push('/my-app/thank-you')
+        history.push('/thank-you')
       })
     }
   }

@@ -62,7 +62,7 @@ const RSVP = () => {
       setAuthFormDisplay('none');
       setFormTwoDisplay('flex');
     } else {
-      history.push('/my-app/invite-not-found')
+      history.push('/invite-not-found')
     }
   }
   return (
