@@ -15,7 +15,7 @@ import {
 const Header = ({ height, viewerIsOpen }) => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(window.location.pathname);
-  const isHomePage = window.location.pathname === '/';
+  const isHomePage = window.location.pathname === '#/';
 
   const onClick = () => {
     setOpen(!open);
@@ -42,19 +42,19 @@ const Header = ({ height, viewerIsOpen }) => {
             to="/rsvp"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/rsvp"}>rsvp</MenuItem>
+            <MenuItem active={active === "#/rsvp"}>rsvp</MenuItem>
           </Link>
           <Link
             to="/info"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/info"}>info</MenuItem>
+            <MenuItem active={active === "#/info"}>info</MenuItem>
           </Link>
           <Link
             to="/photos"
             onClick={() => onClick()}
           >
-            <MenuItem active={active === "/photos"}>photos</MenuItem>
+            <MenuItem active={active === "#/photos"}>photos</MenuItem>
           </Link>
         </Menu>
       </CSSTransition>

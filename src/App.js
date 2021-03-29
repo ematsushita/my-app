@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {Helmet} from "react-helmet";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Info from './components/Info';
 import Photos from './components/Photos';
 import RSVP from './components/RSVP';
