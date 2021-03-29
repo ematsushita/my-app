@@ -12,7 +12,7 @@ const CheckForm = ({ handleNameChange, onCheckSubmit, name, authFormDisplay }) =
     <AuthFormContainer id="auth-form-container" display={authFormDisplay}>
       <GreyBlock>
         <h2>RSVP</h2>
-        <p>kindly reply by august 1, 2021.</p>
+        <p>kindly reply by july 1, 2021.</p>
       </GreyBlock>
       <AuthFormInnerContainer id="auth-form-inner-container" display={authFormDisplay}>
           <AuthForm handleNameChange={handleNameChange} onSubmit={onCheckSubmit} name={name} />

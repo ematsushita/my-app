@@ -45,7 +45,7 @@ const Form2 = ({ formTwoDisplay, name }) => {
     <FormContainer id="form-2-container" display={formTwoDisplay}>
       <GreyBlock display={formTwoDisplay}>
         <h2>RSVP</h2>
-        <p>kindly reply by august 1, 2021.</p>
+        <p>kindly reply by july 1, 2021.</p>
       </GreyBlock>
       <InnerContainer id="form-2inner-container" display={formTwoDisplay}>
         <Form onSubmit={onSubmit}>

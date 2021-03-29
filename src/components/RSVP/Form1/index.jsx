@@ -47,7 +47,7 @@ const Form1 = ({ formOneDisplay, name}) => {
     <FormContainer id="form-1-container" display={formOneDisplay}>
       <GreyBlock display={formOneDisplay}>
         <h2>RSVP</h2>
-        <p>kindly reply by august 1, 2021.</p>
+        <p>kindly reply by july 1, 2021.</p>
       </GreyBlock>
       <InnerContainer id="inner-container" display={formOneDisplay}>
         <Form onSubmit={onSubmit}>
