@@ -37,7 +37,7 @@ function App() {
               <Route path="/my-app/invite-not-found" component={Sorry} />
               <Route path="/my-app/thank-you" component={ThankYou} />
               <Route path="/my-app/error" component={Error} />
-              <Route path="/" exact component={Home} key={window.location.pathname} />
+              <Route path="/my-app" exact component={Home} key={window.location.pathname} />
             </Switch>
           </MainContainer>
         </BodyContainer>
