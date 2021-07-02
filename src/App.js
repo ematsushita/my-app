@@ -9,6 +9,7 @@ import GuestList from './components/GuestList';
 import ThankYou from './components/ThankYou';
 import Sorry from './components/Sorry';
 import Error from './components/AlreadySubmitted';
+import Welcome from './components/Welcome';
 import { BodyContainer, MainContainer } from './styles';
 
 function App() {
@@ -29,13 +30,14 @@ function App() {
         <BodyContainer id="body-container">
           <MainContainer id="main-container" homePage={isHomePage}>
             <Switch>
-              {/* <Route path="/guests" component={GuestList} /> */}
+              <Route path="/guests" component={GuestList} />
               <Route path="/info" component={Info} key={window.location.pathname} />
               <Route path="/rsvp" component={RSVP} />
               <Route path="/photos" component={Photos} />
               <Route path="/invite-not-found" component={Sorry} />
               <Route path="/thank-you" component={ThankYou} />
               <Route path="/error" component={Error} />
+              <Route path="/home" exact component={Welcome} key={window.location.pathname} />
               <Route path="/" exact component={Home} key={window.location.pathname} />
             </Switch>
           </MainContainer>

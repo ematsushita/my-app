@@ -11,6 +11,9 @@ export const FormContainer = styled.div`
     font-weight: 300;
     margin-bottom: 3rem;
   }
+  #plus-one {
+    margin-top: 2rem;
+  }
 `;
 
 export const GreyBlock = styled.div`
@@ -91,8 +94,7 @@ export const Form = styled.form`
       background-color: #fff;
     }
   }
-  #attending {
-    margin-top: 4rem;
+  #attending, #menu-selection{
     font-size: 1rem;
     font-weight: 300;
   }

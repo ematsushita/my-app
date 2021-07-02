@@ -91,8 +91,12 @@ export const Form = styled.form`
       background-color: #fff;
     }
   }
-  #attending {
+  #form-2-attending {
     margin-top: 4rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  #form-2-menu-selection {
     font-size: 1rem;
     font-weight: 300;
   }

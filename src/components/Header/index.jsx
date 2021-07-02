@@ -39,6 +39,12 @@ const Header = ({ height, viewerIsOpen }) => {
       >
         <Menu id="menu" open={open} height={height} isHomePage={isHomePage}>
           <Link
+            to="/home"
+            onClick={() => onClick()}
+          >
+            <MenuItem active={active === "#/home"}>home</MenuItem>
+          </Link>
+          <Link
             to="/rsvp"
             onClick={() => onClick()}
           >

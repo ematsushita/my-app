@@ -31,6 +31,7 @@ const Header2 = ({ height }) => {
         onExited={() => setOpen(false)}
       >
         <Menu id="menu" open={open} height={height}>
+          <Link to="/home" onClick={() => onClick()}><MenuItem>home</MenuItem></Link>
           <Link to="/rsvp" onClick={() => onClick()}><MenuItem>rsvp</MenuItem></Link>
           <Link to="/info" onClick={() => onClick()}><MenuItem>info</MenuItem></Link>
           <Link to="/photos" onClick={() => onClick()}><MenuItem>photos</MenuItem></Link>

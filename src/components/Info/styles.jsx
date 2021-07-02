@@ -2,19 +2,21 @@ import styled from 'styled-components';
 import img from '../../engagement-photos/elissa+matthew-engagement-131_websize.jpg';
 
 export const InfoContainer = styled.div`
+  .swiper-button-next, .swiper-button-prev {
+    color: #FFDAB9;
+  }
   background: white;
-  height: 100vh;
-  padding: 0 30px;
-  #ipad-image {
-    max-width: 100%;
-    @media(min-width: 1024px) {
-      display: none;
-    }
+  height: 90vh;
+  padding: 0 5px;
+  @media(min-width: 768px) {
+    padding: 0 20px;
+  }
   }
 `;
 
 export const InfoBlockContainer = styled.div`
   display: flex;
+  flex-direction: column;
   text-align: left;
   padding: 30px 0;
   > div > h2 {
@@ -30,16 +32,17 @@ export const InfoBlockContainer = styled.div`
     }
   }
   @media(min-width: 1024px) {
+    flex-direction: row-reverse;
     text-align: ${props => props.textAlign};
   }
 `;
 
 export const TextContainer = styled.div`
-  width: 80%;
-  padding: 0 20px;
-  @media(min-width: 1024px) {
-    width: 50%;
-  }
+  // width: 80%;
+  padding: 0 50px;
+  // @media(min-width: 1024px) {
+  //   width: 50%;
+  // }
 `;
 
 export const List = styled.ul`
@@ -65,12 +68,14 @@ export const ListItem = styled.li`
 `;
 
 export const ImageContainer = styled.div`
-  width: 50%;
-  display: none;
   > img {
-    height: 300px;
-  }
-  @media(min-width: 1024px) {
-    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    @media(min-width: 1024px) {
+      width: inherit;
+      margin-bottom: 0;
+      height: 400px;
+      padding-right: 50px;
+    }
   }
 `;

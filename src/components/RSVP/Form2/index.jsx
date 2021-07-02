@@ -5,7 +5,8 @@ import firebase from '../../../firebase';
 
 const Form2 = ({ formTwoDisplay, name }) => {
   let history = useHistory();
-  const [attending, setAttending] = useState(true);
+  const [attending, setAttending] = useState(undefined);
+  const [mealSelection, setMealSelection] = useState('');
   const [guests, setGuests] = useState([]);
   
   const guestNames = guests.map(guest => guest.name);
@@ -26,14 +27,15 @@ const Form2 = ({ formTwoDisplay, name }) => {
   function onSubmit(e) {
     e.preventDefault();
     if (guestNames.includes(name)) {
-      history.push('//error')
+      history.push('/error')
     } else {
       firebase
       .firestore()
       .collection('guests')
       .add({
         attending,
-        name
+        name,
+        mealSelection
       })
       .then(() => {
         history.push('/thank-you')
@@ -45,9 +47,9 @@ const Form2 = ({ formTwoDisplay, name }) => {
     <FormContainer id="form-2-container" display={formTwoDisplay}>
       <GreyBlock display={formTwoDisplay}>
         <h2>RSVP</h2>
-        <p>kindly reply by july 1, 2021.</p>
+        <p>kindly reply by august 1, 2021.</p>
       </GreyBlock>
-      <InnerContainer id="form-2inner-container" display={formTwoDisplay}>
+      <InnerContainer id="form-2-inner-container" display={formTwoDisplay}>
         <Form onSubmit={onSubmit}>
           <FormGroup>
             <input type="text" value={name} />
@@ -55,8 +57,18 @@ const Form2 = ({ formTwoDisplay, name }) => {
           <FormGroup id="form-2-attending">
             <label>Will you be attending?</label>
             <select value={attending} onChange={e => setAttending(e.currentTarget.value)}>
-              <option value={true}>Yes</option>
-              <option value={false}>No</option>
+              <option value="no">Please Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </FormGroup>
+          <FormGroup id="form-2-menu-selection">
+            <label>Meal Selection</label>
+            <select value={mealSelection} onChange={e => setMealSelection(e.currentTarget.value)}>
+              <option value="Unselected">Please select</option>
+              <option value="Beef">Beef</option>
+              <option value="Fish">Fish</option>
+              <option value="Vegetarian">Vegetarian</option>
             </select>
           </FormGroup>
           <button>RSVP!</button>

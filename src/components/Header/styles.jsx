@@ -69,6 +69,7 @@ export const Menu = styled.div`
 `;
 
 export const MenuItem = styled.div`
+  border-bottom: 2px solid transparent;
   display: inline-block;
   color: #5e5b56;
   margin: 20px 20px;
