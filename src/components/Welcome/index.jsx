@@ -16,7 +16,7 @@ const Welcome = () => {
       <WelcomeInnerContainer>
         <TextContainer>
           <p>dear friends & family,</p>
-          <p>
+          <p className="light">
             we’re so excited to celebrate this next chapter in our lives with you. you’ll find all the details throughout our site including a place you can RSVP online, and a list of a few of our favorite restaurants and activities around town. we can’t wait to see you in October, and thank you for all your love and support! see you then!
           </p>
           <p>love, matthew & elissa</p>

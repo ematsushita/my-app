@@ -60,7 +60,7 @@ export const Menu = styled.div`
   display: flex;
   flex-direction: column;
   width: 250px;
-  height: ${props => props.height}px;
+  height: calc(${props => props.height}px - 5px);
   background: white;
   padding: 20px;
   justify-content: center;

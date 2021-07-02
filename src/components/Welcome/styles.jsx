@@ -50,4 +50,8 @@ export const WelcomeInnerContainer = styled.div`
 export const TextContainer = styled.div`
   padding: 20px;
   letter-spacing: 1.5px;
+  .light {
+    font-weight: 200;
+    line-height: 20px;
+  }
 `;
