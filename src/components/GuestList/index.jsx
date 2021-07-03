@@ -3,7 +3,7 @@ import { GuestListContainer, TableContainer } from './styles'
 import firebase from '../../firebase';
 import Header from '../Header';
 
-const GuestList = () => {
+const GuestList = ({ open, setOpen }) => {
   const [guests, setGuests] = useState(undefined);
   const height = window.innerHeight;
 
@@ -21,7 +21,7 @@ const GuestList = () => {
   }, [])
   return ( 
     <>
-      <Header height={height}/>
+      <Header height={height} open={open} setOpen={setOpen}/>
       <GuestListContainer>
         <TableContainer>
           <thead>

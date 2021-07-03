@@ -3,11 +3,11 @@ import Header from '../Header';
 import { MessageContainer, GreyBlock } from './styles';
 import { Link } from "react-router-dom";
 
-const Sorry = () => {
+const Sorry = ({ open, setOpen }) => {
   const height = window.innerHeight;
   return ( 
     <>
-    <Header height={height}/>
+    <Header height={height} open={open} setOpen={setOpen}/>
     <MessageContainer id="invite-not-found-container">
       <GreyBlock>
         <h2>Sorry!</h2>

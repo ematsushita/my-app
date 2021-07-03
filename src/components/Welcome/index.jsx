@@ -2,12 +2,12 @@ import React from 'react';
 import Header from '../Header';
 import { WelcomeContainer, GreyBlock, WelcomeInnerContainer, TextContainer } from './styles';
 
-const Welcome = () => {
+const Welcome = ({ open, setOpen }) => {
   const height = window.innerHeight;
 
   return (
     <>
-    <Header height={height} />
+    <Header height={height} open={open} setOpen={setOpen} />
     <WelcomeContainer id="welcome-container">
       <GreyBlock>
         <h2>WELCOME</h2>

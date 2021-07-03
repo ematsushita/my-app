@@ -26,12 +26,12 @@ import {
 SwiperCore.use([Navigation]);
 
 
-const Info = () => {
+const Info = ({ open, setOpen }) => {
   const height = window.innerHeight;
 
   return ( 
     <>
-    <Header height={height} />
+    <Header height={height} open={open} setOpen={setOpen}/>
     <InfoContainer id="info-container">
       <Swiper navigation={true} className="mySwiper">
         <SwiperSlide>
@@ -100,7 +100,7 @@ const Info = () => {
               <p><span>explore</span></p>
               <List>
                 <ListItem><a href="https://www.grousemountain.com/" rel="noopener noreferrer" target="_blank">Grouse Mountain</a> - drive up to this 1,200-metre mountain offering various activities plus sweeping views of Vancouver.</ListItem>
-                <ListItem><a href="https://vancouver.ca/parks-recreation-culture/seawall.aspx" rel="noopener noreferrer" target="_blank">Vancouver Seawall</a> - the world's longest uninterrupted waterfront path - perfect for a walk, cycle or job.</ListItem>
+                <ListItem><a href="https://vancouver.ca/parks-recreation-culture/seawall.aspx" rel="noopener noreferrer" target="_blank">Vancouver Seawall</a> - the world's longest uninterrupted waterfront path - perfect for a walk, cycle or jog.</ListItem>
               </List>
             </TextContainer>
           </InfoBlockContainer>

@@ -6,17 +6,17 @@ import {
   DateContainer
  } from './styles';
 
-const Home = () => {
+const Home = ({ open, setOpen }) => {
   const height = window.innerHeight;
 
   return ( 
-    <>
-      <Header2 height={height} />
+    <React.Fragment>
+      <Header2 height={height} open={open} setOpen={setOpen} />
       <HomeContainer id="home-container">
         <DateContainer>10.01.2021</DateContainer>
         <TitleContainer>MATTHEW & ELISSA</TitleContainer>
       </HomeContainer>
-    </>
+    </React.Fragment>
    );
 }
  

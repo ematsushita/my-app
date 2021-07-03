@@ -14,6 +14,12 @@ import { BodyContainer, MainContainer } from './styles';
 
 function App() {
   const [currentPage, setcurrentPage] = useState(window.location.hash);
+  const [open, setOpen] = useState(false);
+  const closeOnClick = () => {
+    if (open) {
+      setOpen(false)
+    }
+  }
   const isHomePage = (currentPage === '#/') || (currentPage === '/');;
 
   useEffect(() => {
@@ -28,17 +34,49 @@ function App() {
       </Helmet>
       <Router>
         <BodyContainer id="body-container">
-          <MainContainer id="main-container" homePage={isHomePage}>
+          <MainContainer id="main-container" homePage={isHomePage} onClick={closeOnClick}>
             <Switch>
-              <Route path="/guests" component={GuestList} />
-              <Route path="/info" component={Info} key={window.location.pathname} />
-              <Route path="/rsvp" component={RSVP} />
-              <Route path="/photos" component={Photos} />
-              <Route path="/invite-not-found" component={Sorry} />
-              <Route path="/thank-you" component={ThankYou} />
-              <Route path="/error" component={Error} />
-              <Route path="/home" exact component={Welcome} key={window.location.pathname} />
-              <Route path="/" exact component={Home} key={window.location.pathname} />
+              <Route
+                path="/guests"
+                render={(props) => <GuestList {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/info"
+                render={(props) => <Info {...props} open={open} setOpen={setOpen} /> }
+                key={window.location.pathname}
+              />
+              <Route
+                path="/rsvp"
+                render={(props) => <RSVP {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/photos"
+                render={(props) => <Photos {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/invite-not-found"
+                render={(props) => <Sorry {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/thank-you"
+                render={(props) => <ThankYou {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/error"
+                render={(props) => <Error {...props} open={open} setOpen={setOpen} /> }
+              />
+              <Route
+                path="/home"
+                exact
+                render={(props) => <Welcome {...props} open={open} setOpen={setOpen} /> }
+                key={window.location.pathname}
+              />
+              <Route
+                path="/"
+                exact
+                render={(props) => <Home {...props} open={open} setOpen={setOpen} /> }
+                key={window.location.pathname}
+              />
             </Switch>
           </MainContainer>
         </BodyContainer>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -12,8 +12,7 @@ import {
   InitialContainer
 } from './styles';
 
-const Header = ({ height, viewerIsOpen }) => {
-  const [open, setOpen] = useState(false);
+const Header = ({ height, viewerIsOpen, open, setOpen }) => {
   const active = window.location.hash;
   const isHomePage = window.location.hash === '#/';
 

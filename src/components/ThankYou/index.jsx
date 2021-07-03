@@ -3,11 +3,11 @@ import Header from '../Header';
 import { MessageContainer, GreyBlock } from '../Sorry/styles';
 import img from './full-width-image.png';
 
-const ThankYou = () => {
+const ThankYou = ({ open, setOpen }) => {
   const height = window.innerHeight;
   return ( 
     <>
-      <Header height={height}/>
+      <Header height={height} open={open} setOpen={setOpen}/>
       <MessageContainer id="thank-you-container">
         <GreyBlock>
           <h2>Thank you!</h2>

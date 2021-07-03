@@ -5,7 +5,7 @@ import Header from '../Header';
 import { PhotoContainer } from './styles';
 import { photos } from './photos';
 
-const Photos = () => {
+const Photos = ({ open, setOpen }) => {
   const height = window.innerHeight;
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Photos = () => {
 
   return (
     <PhotoContainer id="photo-container">
-      <Header height={height} viewerIsOpen={viewerIsOpen}/>
+      <Header height={height} viewerIsOpen={viewerIsOpen} open={open} setOpen={setOpen} />
       <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

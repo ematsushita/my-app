@@ -7,7 +7,7 @@ import Form1 from './Form1';
 import Form2 from './Form2';
 import { RSVPContainer } from './styles';
 
-const RSVP = () => {
+const RSVP = ({ open, setOpen }) => {
   let history = useHistory();
   const [plusOneGuests, setPlusOneGuests] = useState([]);
   const [noPlusOneGuests, setNoPlusOneGuests] = useState([]);
@@ -67,7 +67,7 @@ const RSVP = () => {
   }
   return (
     <>
-    <Header height={height} />
+    <Header height={height} open={open} setOpen={setOpen} />
     <RSVPContainer id="rsvp-container">
       <CheckForm
         id="check-form"
