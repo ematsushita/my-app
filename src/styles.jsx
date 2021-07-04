@@ -26,7 +26,6 @@ export const MainContainer = styled.div`
     }
     return '';
   }}
-  text-align: center;
   #photocredit {
     width: 100%;
     position: absolute;
