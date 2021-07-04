@@ -11,6 +11,7 @@ export const BodyContainer = styled.div`
 `;
 
 export const MainContainer = styled.div`
+  position: relative;
   min-height: 100%;
   ${(props) => {
     if (props && props.homePage) {
@@ -25,4 +26,16 @@ export const MainContainer = styled.div`
     }
     return '';
   }}
+  text-align: center;
+  #photocredit {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    color: #444444;
+    text-align: center;
+    > a {
+      link-stye: none;
+      color: #444444;
+    }
+  }
 `;
