@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
     color: #FFDAB9;
   }
   background: white;
-  height: 90vh;
+  min-height: 100vh;
   padding: 0 5px;
   @media(min-width: 768px) {
     padding: 0 20px;

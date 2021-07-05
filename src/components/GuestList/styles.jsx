@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const GuestListContainer = styled.div`
   background: white;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   padding-top: 50px;
 `;

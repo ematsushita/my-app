@@ -29,9 +29,12 @@ export const MainContainer = styled.div`
   #photocredit {
     width: 100%;
     position: absolute;
-    bottom: 20px;
+    bottom: 8px;
     color: #444444;
     text-align: center;
+    @media(min-width: 1024px) {
+      bottom: 20px;
+    }
     > a {
       link-stye: none;
       color: #444444;
