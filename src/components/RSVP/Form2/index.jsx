@@ -57,7 +57,7 @@ const Form2 = ({ formTwoDisplay, name }) => {
           <FormGroup id="form-2-attending">
             <label>Will you be attending?</label>
             <select value={attending} onChange={e => setAttending(e.currentTarget.value)}>
-              <option value="no">Please Select</option>
+              <option value={undefined}>Please Select</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
