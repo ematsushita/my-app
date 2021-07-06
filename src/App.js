@@ -78,7 +78,7 @@ function App() {
                 key={window.location.pathname}
               />
             </Switch>
-            <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
+            {/* <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div> */}
           </MainContainer>
         </BodyContainer>
       </Router>
