@@ -14,6 +14,7 @@ const Sorry = ({ open, setOpen }) => {
         <p>We couldn't find your invite</p>
         <Link to="/rsvp"><button>Back to RSVP</button></Link>
       </GreyBlock>
+      <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
     </MessageContainer>
   </>
    );

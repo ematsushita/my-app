@@ -16,6 +16,7 @@ const ThankYou = ({ open, setOpen }) => {
         <div id="full-width-image">
           <img src={img} alt="elissa + matthew wedding" />
         </div>
+        <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
       </MessageContainer>
     </>
    );

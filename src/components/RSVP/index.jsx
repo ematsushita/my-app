@@ -78,6 +78,7 @@ const RSVP = ({ open, setOpen }) => {
       />
       <Form1 id="form-1" name={name} formOneDisplay={formOneDisplay}/>
       <Form2 id="form-2" name={name} formTwoDisplay={formTwoDisplay}/>
+      <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
     </RSVPContainer>
     </>
    );

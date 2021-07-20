@@ -106,6 +106,7 @@ const Info = ({ open, setOpen }) => {
           </InfoBlockContainer>
         </SwiperSlide>
       </Swiper>
+      <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
     </InfoContainer>
     </>
    );

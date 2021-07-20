@@ -48,6 +48,27 @@ const GuestList = ({ open, setOpen }) => {
     }))
   }, [])
 
+  let count = 0;
+  const mapGuests = (guests) => {
+    return guests.map(guest => {
+      if (guest.attending === "yes") {
+        count = count + 1
+      }
+      if (guest.plusOne) {
+        count = count + 1
+      }
+      return (
+        <tr key={guest.id}>
+          <td>{guest.name}</td>
+          <td>{guest.attending}</td>
+          <td>{guest.mealSelection}</td>
+          <td>{guest.plusOne || ''}</td>
+          <td>{guest.plusOneMealSelection || ''}</td>
+        </tr>
+      )
+    })
+  }
+
   return ( 
     <>
       <Header height={height} open={open} setOpen={setOpen}/>
@@ -63,17 +84,12 @@ const GuestList = ({ open, setOpen }) => {
             </tr>
           </thead>
           <tbody>
-            {guests && guests.map(guest => (
-              <tr key={guest.id}>
-                <td>{guest.name}</td>
-                <td>{guest.attending}</td>
-                <td>{guest.mealSelection}</td>
-                <td>{guest.plusOne || ''}</td>
-                <td>{guest.plusOneMealSelection || ''}</td>
-              </tr>
-            ))}
+            {guests && mapGuests(guests)}
           </tbody>
         </TableContainer>
+        <div>
+          <p>Count: {count}</p>
+        </div>
         <div>
           <p>Plus One List</p>
           <ul>

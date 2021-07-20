@@ -16,6 +16,7 @@ const Home = ({ open, setOpen }) => {
         <DateContainer>10.01.2021</DateContainer>
         <TitleContainer>MATTHEW & ELISSA</TitleContainer>
       </HomeContainer>
+      <div id="photocredit-home">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
     </React.Fragment>
    );
 }

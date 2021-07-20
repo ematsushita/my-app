@@ -22,6 +22,7 @@ const Welcome = ({ open, setOpen }) => {
           <p>love, matthew & elissa</p>
         </TextContainer>
       </WelcomeInnerContainer>
+      <div id="photocredit">photos by <a href="https://www.kaoverii.com/" rel="noopener noreferrer" target="_blank">Kaoverii Silva</a></div>
     </WelcomeContainer>
     </>
    );
