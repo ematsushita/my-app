@@ -69,6 +69,19 @@ const GuestList = ({ open, setOpen }) => {
     })
   }
 
+  const buildGuestsStr = (guests) => {
+    let results = ''
+    guests.forEach((guest) => {
+      if (guest.attending === "yes" && guest.mealSelection) {
+        results += `${guest.name}, `
+      }
+      if (guest.plusOne) {
+        results += `${guest.plusOne}, `
+      }
+    })
+    return results
+  }
+
   return ( 
     <>
       <Header height={height} open={open} setOpen={setOpen}/>
@@ -91,6 +104,10 @@ const GuestList = ({ open, setOpen }) => {
           <p>Count: {count}</p>
         </div>
         <div>
+          <p>{guests && buildGuestsStr(guests)}</p>
+        </div>
+
+        {/* <div>
           <p>Plus One List</p>
           <ul>
             {plusOne && plusOne.map(guest => (
@@ -105,7 +122,7 @@ const GuestList = ({ open, setOpen }) => {
               <li>{guest.name}</li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </GuestListContainer>
     </>
    );

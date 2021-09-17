@@ -43,8 +43,8 @@ const Info = ({ open, setOpen }) => {
               <h2>the wedding</h2>
               <p><span>date: </span>October 1, 2021</p>
               <p><span>location: </span>Stanley Park Pavilion, 610 Pipeline Rd</p>
-              <p><span>ceremony: </span>4pm</p>
-              <p><span>reception: </span>6pm</p>
+              <p><span>ceremony starts: </span>4:30pm</p>
+              <p><span>parking: </span>there are 200 spaces are available approximately 150 metres behind the Pavilion in the lot next to the Miniature Train</p>
               <p><span>directions: </span></p>
               <List>
                 <ListItem><span>From Georgia Street...</span> enter Stanley Park and continue straight through the round-about. Take your first right after the Stanley Park Pavilion sign with the large red rose, which will swing left and bring you to the Pavilion.</ListItem>
